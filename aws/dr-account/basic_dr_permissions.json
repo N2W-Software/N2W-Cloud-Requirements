@@ -1,0 +1,50 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DrAccountBasic",
+            "Action": [
+                "kms:ListAliases",
+                "kms:ListKeys",
+                "kms:CreateGrant",
+                "kms:DescribeKey",
+                "kms:GenerateDataKeyWithoutPlaintext",
+                "kms:ReEncryptFrom",
+                "kms:ReEncryptTo",
+                "ec2:CopySnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:DescribeImages",
+                "ec2:ModifySnapshotAttribute",
+                "ec2:ModifyImageAttribute",
+                "ec2:DeleteSnapshot",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RunInstances",
+                "rds:DescribeDBSnapshots",
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DescribeDBInstances",
+                "rds:DescribeOptionGroups",
+                "rds:ModifyDBSnapshotAttribute",
+                "rds:CopyDBSnapshot",
+                "rds:DeleteDBSnapshot",
+                "rds:AddTagsToResource",
+                "rds:ModifyDBClusterSnapshotAttribute",
+                "rds:CopyDBClusterSnapshot",
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DeleteDBClusterSnapshot",
+                "rds:ModifyDBClusterSnapshotAttribute",
+                "rds:CreateDBInstance",
+                "rds:DescribeDBParameterGroups",
+                "rds:DescribeDBClusterParameterGroups",
+                "rds:DescribeDBEngineVersions"
+            ],
+            "Resource": [
+              "*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}

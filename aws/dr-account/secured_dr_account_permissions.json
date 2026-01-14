@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DrAccountSecured",
+            "Action": [
+                "iam:SimulatePrincipalPolicy",
+                "iam:GetRole",
+                "iam:ListUsers",
+                "iam:ListAccessKeys",
+                "iam:ListRoles"
+            ],
+            "Resource": [
+              "*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}
