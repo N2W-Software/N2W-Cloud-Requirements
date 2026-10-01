@@ -1,5 +1,5 @@
 title: N2WS Backup & Recovery
-description: N2WS Backup & Recovery - 5.0.0
+description: N2WS Backup & Recovery - 5.0.1
 stage: GA
 includedPermissions:
 - compute.zones.get
@@ -14,6 +14,7 @@ includedPermissions:
 - compute.disks.setLabels
 - compute.disks.createSnapshot
 - compute.diskTypes.list
+- compute.machineTypes.list
 - compute.instances.attachDisk
 - compute.zoneOperations.get
 - compute.regionOperations.get
@@ -37,6 +38,8 @@ includedPermissions:
 - compute.subnetworks.use
 - compute.subnetworks.useExternalIp
 - compute.subnetworks.get
+- compute.networks.list
+- compute.subnetworks.list
 - compute.disks.listTagBindings
 - compute.instances.listTagBindings
 - compute.disks.createTagBinding
@@ -45,6 +48,7 @@ includedPermissions:
 - resourcemanager.tagValues.list
 - resourcemanager.tagValueBindings.create
 - iam.serviceAccounts.get
+- iam.serviceAccounts.list
 - iam.serviceAccounts.actAs
 - resourcemanager.projects.get
 - cloudkms.keyRings.list
