@@ -21,6 +21,7 @@
           "Microsoft.Compute/disks/read",
           "Microsoft.Compute/disks/write",
           "Microsoft.Compute/disks/delete",
+          "Microsoft.Compute/disks/beginGetAccess/action",
           "Microsoft.Compute/diskAccesses/read",
           "Microsoft.Compute/snapshots/delete",
           "Microsoft.Compute/snapshots/read",
@@ -112,7 +113,6 @@
           "Microsoft.Network/networkSecurityGroups/securityRules/write",
           "Microsoft.Network/routeTables/routes/write",
           "Microsoft.Network/routeTables/join/action",
-          "Microsoft.Compute/disks/beginGetAccess/action",
           "Microsoft.Compute/disks/endGetAccess/action",
           "Microsoft.Sql/locations/databaseAzureAsyncOperation/read"
         ],
